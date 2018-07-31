@@ -140,6 +140,7 @@ Gradle
 | BannerStyle.INDICATOR_TITLE | 显示指示器 + 标题 |
 
 代码：
+
     mBannerView.setBannerStyle(BannerStyle.INDICATOR)
     
     
@@ -185,12 +186,12 @@ Gradle
 | setTitleColor() | 标题颜色 |
 | setTitleTextSize() | 标题字体大小 |
 
-
+>
 作者：skcodestack
 链接：https://github.com/skcodestack
 來源：gitbug
 简书著作权归作者所有，任何形式的转载都请联系作者获得授权并注明出处。
-
+>
 
 
 
