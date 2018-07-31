@@ -31,7 +31,7 @@ public abstract class BannerAdapter {
      * @param position
      * @return
      */
-    public String getBannerDesc(int position) {
+    public String getBannerTitle(int position) {
         return "";
     }
 }

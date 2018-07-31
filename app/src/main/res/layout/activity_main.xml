@@ -12,17 +12,29 @@
         app:heightProportion="4"
         app:dotSize="8dp"
         app:dotDistance="3dp"
-        app:dotGravity="right"
-        app:bottomColor="@color/banner_bottom_bar_bg_day"
+        app:indicatorGravity="right"
+        app:bottomBackgroundColor="@color/banner_bottom_bar_bg_day"
         app:dotIndicatorFocus="@color/dot_select_color"
-        app:dotIndicatorNormal="@color/dot_unselect_color">
+        app:dotIndicatorNormal="@color/dot_unselect_color"
+        app:bannerStyle="indicator_title"
+        app:titleColor="@color/colorAccent"
+        app:titleTextSize="15sp">
 
     </github.com.bannerviewlibrary.BannerView>
 
     <Button
-        android:id="@+id/btn_jump"
+        android:id="@+id/btn_non_title_indicator"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="跳转"/>
-
+        android:text="都不显示"/>
+    <Button
+        android:id="@+id/btn_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="显示指示器"/>
+    <Button
+        android:id="@+id/btn_title_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="指示器 + 标题"/>
 </LinearLayout>

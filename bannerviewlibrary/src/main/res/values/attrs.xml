@@ -2,24 +2,33 @@
 <resources>
     <declare-styleable name="BannerView">
         <!-- 点的选中的颜色值 -->
-        <attr name="dotIndicatorFocus"  format="color|reference"/>
+        <attr name="dotIndicatorFocus" format="color|reference" />
         <!-- 点的默认的颜色值 -->
-        <attr name="dotIndicatorNormal"  format="color|reference"/>
+        <attr name="dotIndicatorNormal" format="color|reference" />
         <!-- 点的大小 -->
-        <attr name="dotSize" format="dimension"/>
+        <attr name="dotSize" format="dimension" />
         <!-- 点的间距 -->
-        <attr name="dotDistance" format="dimension"/>
+        <attr name="dotDistance" format="dimension" />
         <!-- 点的位置 -->
-        <attr name="dotGravity" format="enum">
-            <enum name="center" value="0"/>
-            <enum name="right" value="1"/>
-            <enum name="left" value="-1"/>
+        <attr name="indicatorGravity" format="enum">
+            <enum name="center" value="0" />
+            <enum name="right" value="1" />
+            <enum name="left" value="-1" />
         </attr>
         <!-- 底部的颜色 -->
-        <attr name="bottomColor" format="color"/>
+        <attr name="bottomBackgroundColor" format="color" />
 
-        <attr name="withProportion" format="float"/>
-        <attr name="heightProportion" format="float"/>
+        <attr name="withProportion" format="float" />
+        <attr name="heightProportion" format="float" />
+
+        <!--样式-->
+        <attr name="bannerStyle" format="enum">
+            <enum name="non_indicator_title" value="0" />
+            <enum name="indicator_title" value="1" />
+            <enum name="indicator" value="2" />
+        </attr>
+        <attr name="titleColor" format="color" />
+        <attr name="titleTextSize" format="dimension" />
     </declare-styleable>
 
 </resources>

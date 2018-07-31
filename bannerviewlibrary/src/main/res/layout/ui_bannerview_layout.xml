@@ -11,14 +11,17 @@
     </github.com.bannerviewlibrary.BannerViewPager>
 
     <RelativeLayout
+        android:id="@+id/rl_desc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
+        android:minHeight="30dp"
         android:background="#55000000"
-        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
-        android:paddingBottom="5dp">
+        android:paddingTop="5dp">
+
         <TextView
             android:id="@+id/tv_desc"
             android:layout_width="wrap_content"
@@ -26,11 +29,12 @@
             android:text="首页描述...."
             android:textColor="@android:color/white"
             android:textSize="15sp" />
+
         <LinearLayout
             android:id="@+id/dot_container"
-            android:layout_centerVertical="true"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
             android:orientation="horizontal" />
     </RelativeLayout>
 
