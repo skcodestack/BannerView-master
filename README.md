@@ -10,8 +10,11 @@
 >#### 3.自由切换动画效果(使用第三方动态库)
 >#### 4.api链式调用，让代码更加清晰 
 
+<br/>
+
 >### 效果图：
 
+<br/>
 
 #### 使用
 
@@ -29,6 +32,8 @@ Gradle
 >
    compile 'github.skcodestack:bannerviewlibrary:1.0'
 >
+
+<br/>
 
 >### Step 2.添加到布局中
 >
@@ -64,6 +69,8 @@ Gradle
 | titleColor | 标题的颜色 |
 | titleTextSize | 标题字体大小 |
 
+<br/>
+
 >### Step 3.添加数据(设置Adapter)
 >
     mBannerView.setAdapter(new BannerAdapter() {
@@ -94,11 +101,16 @@ Gradle
             }
         })
 >
+
+<br/>
+
 >### Step 4.使设置生效（开始）
 >
     //必须调用，更新配置后，也要调用
     mBannerView.start()
 >
+
+<br/>
 
 >### Step 5.如果需要轮播功能
 >
@@ -130,6 +142,8 @@ Gradle
 代码：
     mBannerView.setBannerStyle(BannerStyle.INDICATOR)
     
+    
+    
 >### 动画
 
 | 名称 |
@@ -151,6 +165,25 @@ Gradle
 |Transformer.ZoomIn|
 |Transformer.ZoomOut|
 |Transformer.ZoomOutSlide|
+
+代码：
+    mBannerView..setPageTransformer(Transformer.ForegroundToBackground)
+    
+    
+    
+    
+>### 其他配置
+| 方法 | 功能 |
+|----------|:-------------:|
+| setBottomBackgroundColor() | 下面横幅的背景色 | 
+| setDelayTime() | 滚动延迟时间 |
+| setDotIndicatorDistance() | 圆点的间距 |
+| setDotIndicatorNormalDrawable() | 圆点没选中drawable |
+| setDotIndicatorFocusDrawable() | 圆点被选中drawable |
+| setDotIndicatorSize() | 指示器圆点大小 |
+| setIndicatorGravity() | 指示器位置 |
+| setTitleColor() | 标题颜色 |
+| setTitleTextSize() | 标题字体大小 |
 
 
 作者：skcodestack
