@@ -101,6 +101,7 @@ public class MainActivity extends AppCompatActivity  {
         mBannerView.setAdapter(new BannerAdapter() {
             @Override
             public View getView(int position, View convertView) {
+                // convertView 如果不为空，则可以复用
                 ImageView mImageView = null;
                 if (convertView == null) {
                     mImageView = new ImageView(mActivity);
@@ -116,6 +117,11 @@ public class MainActivity extends AppCompatActivity  {
                 return mData.length;
             }
 
+            /**
+             * 标题
+             * @param position
+             * @return
+             */
             @Override
             public String getBannerTitle(int position) {
                 return mDesc[position];
